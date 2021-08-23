@@ -1,0 +1,158 @@
+[
+  {
+    "id":1,
+    "parentId":2,
+    "picture":"https://image.shutterstock.com/z/stock-photo-red-kitchen-stand-food-mixer-on-a-white-background-d-rendering-678892978.jpg",
+    "name":"Hamur Yoğurucu"
+  },
+  {
+    "id":2,
+    "parentId":null,
+    "picture":"https://image.shutterstock.com/shutterstock/photos/636867466/display_1500/stock-photo--d-render-image-set-of-home-appliances-on-white-background-636867466.jpg",
+    "name":"Mutfak Aletleri"
+  },
+  {
+    "id":3,
+    "parentId":2,
+    "picture":"https://image.shutterstock.com/z/stock-photo-metal-electric-kettle-564327403.jpg",
+    "name":"Kettle"
+  },
+  {
+    "id":4,
+    "parentId":null,
+    "picture":"https://image.shutterstock.com/image-illustration/home-appliances-group-white-refrigerator-600w-572500789.jpg",
+    "name":"Beyaz Eşya"
+  },
+  {
+    "id":5,
+    "parentId":8,
+    "picture":"https://image.shutterstock.com/shutterstock/photos/1713062818/display_1500/stock-photo-classic-armchair-art-deco-style-in-purple-velvet-with-wooden-legs-isolated-on-white-background-1713062818.jpg",
+    "name":"Koltuk"
+  },
+  {
+    "id":6,
+    "parentId":4,
+    "picture":"https://image.shutterstock.com/z/stock-photo-modern-silver-washing-machine-isolated-on-white-background-199882085.jpg",
+    "name":"Çamaşır Makinesi"
+  },
+  {
+    "id":7,
+    "parentId":2,
+    "picture":"https://image.shutterstock.com/z/stock-photo-red-electric-blender-d-rendering-isolated-on-white-background-702502408.jpg",
+    "name":"Blender"
+  },
+  {
+    "id":8,
+    "parentId":null,
+    "picture":"https://image.shutterstock.com/z/stock-photo-interior-of-the-living-room-d-illustration-1899674929.jpg",
+    "name":"Mobilya"
+  },
+  {
+    "id":9,
+    "parentId":12,
+    "picture":"https://image.shutterstock.com/z/stock-photo-studio-shot-of-a-wheelbarrow-full-of-dirt-isolated-on-white-background-417857257.jpg",
+    "name":"El Arabası"
+  },
+  {
+    "id":10,
+    "parentId":2,
+    "picture":"https://image.shutterstock.com/z/stock-photo-closeup-of-a-black-hand-blender-on-a-white-background-702833776.jpg",
+    "name":"El Blender"
+  },
+  {
+    "id":11,
+    "parentId":null,
+    "picture":"https://image.shutterstock.com/z/stock-photo-modern-student-home-with-diy-furniture-and-colorful-decorations-503193214.jpg",
+    "name":"Ev Dekorasyon"
+  },
+  {
+    "id":12,
+    "parentId":null,
+    "picture":"https://image.shutterstock.com/z/stock-photo-essential-realistic-gardening-tools-colorful-set-isolated-on-white-445805392.jpg",
+    "name":"Bahçe Aletleri"
+  },
+  {
+    "id":13,
+    "parentId":2,
+    "picture":"https://image.shutterstock.com/z/stock-photo-electric-hand-mixer-is-a-kitchen-appliance-intended-for-mixing-isolated-on-white-background-1254771280.jpg",
+    "name":"Mikser"
+  },
+  {
+    "id":14,
+    "parentId":4,
+    "picture":"https://image.shutterstock.com/z/stock-photo-image-of-the-microwave-oven-on-a-white-background-83809138.jpg",
+    "name":"Mikrodalga Fırın"
+  },
+  {
+    "id":15,
+    "parentId":12,
+    "picture":"https://image.shutterstock.com/z/stock-photo-garden-shovel-isolated-on-white-background-616690754.jpg",
+    "name":"Bahçe Küreği"
+  },
+  {
+    "id":16,
+    "parentId":8,
+    "picture":"https://image.shutterstock.com/z/stock-photo-place-setting-in-an-expensive-haute-cuisine-restaurant-97121126.jpg",
+    "name":"Yemek Masası"
+  },
+  {
+    "id":17,
+    "parentId":11,
+    "picture":"https://image.shutterstock.com/z/stock-vector-old-antique-wall-clock-198638246.jpg",
+    "name":"Duvar Saati"
+  },
+  {
+    "id":18,
+    "parentId":12,
+    "picture":"https://image.shutterstock.com/shutterstock/photos/1279154596/display_1500/stock-vector-garden-rake-icon-sketch-style-illustration-of-garden-tools-1279154596.jpg",
+    "name":"Tırmık"
+  },
+  {
+    "id":19,
+    "parentId":4,
+    "picture":"https://image.shutterstock.com/z/stock-photo-top-mount-fridge-isolated-on-white-background-side-view-of-stainless-steel-double-door-1306270882.jpg",
+    "name":"Buzdolabı"
+  },
+  {
+    "id":20,
+    "parentId":12,
+    "picture":"https://image.shutterstock.com/image-photo/watering-can-600w-476991820.jpg",
+    "name":"Sulama Kabı"
+  },
+  {
+    "id":21,
+    "parentId":11,
+    "picture":"https://image.shutterstock.com/z/stock-photo-sitting-black-monkey-bibelot-on-the-white-background-thinking-monkey-1921966451.jpg",
+    "name":"Biblo"
+  },
+  {
+    "id":22,
+    "parentId":11,
+    "picture":"https://image.shutterstock.com/z/stock-photo-home-deco-indoor-with-candle-holder-and-light-bulbs-cozy-blanket-and-faux-fur-cozy-winter-interior-747191389.jpg",
+    "name":"Mumluk"
+  },
+  {
+    "id":23,
+    "parentId":8,
+    "picture":"https://image.shutterstock.com/z/stock-photo-interior-walk-in-closet-simple-classic-style-d-rendering-d-illustration-1097501066.jpg",
+    "name":"Dolap"
+  },
+  {
+    "id":24,
+    "parentId":11,
+    "picture":"https://image.shutterstock.com/z/stock-photo-chinese-antique-vase-on-the-plain-back-ground-374237656.jpg",
+    "name":"Vazo"
+  },
+  {
+    "id":25,
+    "parentId":8,
+    "picture":"https://image.shutterstock.com/z/stock-photo-modern-coffee-table-520100755.jpg",
+    "name":"Sehpa"
+  },
+  {
+    "id":26,
+    "parentId":8,
+    "picture":"https://image.shutterstock.com/z/stock-photo-cabinet-in-modern-empty-room-minimal-design-d-rendering-1935946810.jpg",
+    "name":"TV Ünitesi"
+  }
+]
