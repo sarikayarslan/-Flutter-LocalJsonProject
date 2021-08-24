@@ -1,16 +1,4 @@
-# flutterjsonproject
+# Local Json Read Project
 
-A new Flutter project.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![ProjectExample](https://media.giphy.com/media/zzgHMBluu2nzfT1FxO/giphy.gif?cid=790b7611337bbf28f71229281e7e0be355c25544db6b5db6&rid=giphy.gif&ct=g)
