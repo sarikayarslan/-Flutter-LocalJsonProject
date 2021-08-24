@@ -48,7 +48,46 @@ class _MyAppState extends State<MyApp> {
               },
             ),
           ),
+          Container(
+            height: 453,
+            child: FutureBuilder(
+              future: DefaultAssetBundle.of(context)
+                  .loadString("assets/jsonArray.json"),
+              builder: (context, asyncSnapshot) {
+                item = jsonDecode(asyncSnapshot.data.toString());
 
+                return ListView.builder(
+                  scrollDirection: Axis.vertical,
+                  itemBuilder: (BuildContext context, int index) {
+                    if (item[index]['parentId'] == null) {
+                      return Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Card(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20)),
+                          elevation: 3,
+                          child: Row(
+                            children: [
+                              Container(
+                                width: 160,
+                                child: HorizontalImage(
+                                    item[index]['picture'].toString()),
+                              ),
+                              Text(item[index]['name'].toString()),
+                            ],
+                          ),
+                        ),
+                      );
+                    } else {
+                      return Container(color: Colors.white // This is optional
+                          );
+                    }
+                  },
+                  itemCount: item == null ? 0 : item.length,
+                );
+              },
+            ),
+          ),
         ],
       ),
     );
@@ -66,5 +105,45 @@ Widget HorizontalImage(String imageUrl) {
                 child: Image.network(
               imageUrl,
             )))),
+  );
+}
+
+Widget verticalList() {
+  return Padding(
+    padding: const EdgeInsets.only(left: 8.0, right: 8.0),
+    child: Container(
+      height: 80,
+      child: Card(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        color: Colors.white,
+        elevation: 3,
+        child: ListTile(
+          leading: Card(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12)),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Image.asset(
+                  'assets/pill.png',
+                  width: 40,
+                  height: 40,
+                ),
+              )),
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          title: Text(
+            "Merhaba",
+            style: TextStyle(
+                fontSize: 20, color: Colors.white, fontFamily: 'Open Sans'),
+          ),
+          subtitle: Text(
+            "Deneme",
+            style: TextStyle(
+                fontSize: 20, color: Colors.white, fontFamily: 'Open Sans'),
+          ),
+          onTap: () {},
+        ),
+      ),
+    ),
   );
 }
