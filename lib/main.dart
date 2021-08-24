@@ -7,6 +7,7 @@ void main() {
     debugShowCheckedModeBanner: false,
     home: MyApp(),
   ));
+
 }
 
 class MyApp extends StatefulWidget {
@@ -16,22 +17,19 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   List item;
-  @override
   _MyAppState createState() => _MyAppState();
 
   var parentId = 2;
-
-
+  String categoryName ="";
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
-      appBar: AppBar(
-        title: Text("Json Deneme"),
-      ),
       body: Column(
         children: [
+          SizedBox(
+            height: 50,
+          ),
           Container(
             height: 150,
             child: FutureBuilder(
@@ -45,14 +43,15 @@ class _MyAppState extends State<MyApp> {
                   itemBuilder: (BuildContext context, int index) {
                     if (item[index]['parentId'] == null) {
                       return InkWell(
-                        onTap: (){
-
-                          setState(() {
-                            parentId=item[index]['id'];
-                          });
-
-                        },
-                          child: HorizontalImage(item[index]['picture'].toString()));
+                          onTap: () {
+                            setState(() {
+                              parentId = item[index]['id'];
+                              print(index);
+                              categoryName = item[index]['name'];
+                            });
+                          },
+                          child: HorizontalImage(
+                              item[index]['picture'].toString()));
                     } else {
                       return Container(color: Colors.white // This is optional
                           );
@@ -63,8 +62,23 @@ class _MyAppState extends State<MyApp> {
               },
             ),
           ),
+          Align(
+              alignment: Alignment.topLeft,
+              child: Padding(
+                padding: const EdgeInsets.only(left:25, bottom: 20),
+                child: Text(
+
+                  categoryName,
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.blueGrey,
+                      fontFamily: 'Open Sans'),
+                ),
+              )),
+          //Text(item[indexGetter]['name'].toString()),
           Container(
-            height: 453,
+            height: 430,
             child: FutureBuilder(
               future: DefaultAssetBundle.of(context)
                   .loadString("assets/jsonArray.json"),
