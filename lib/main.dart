@@ -17,6 +17,13 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   List item;
   @override
+  _MyAppState createState() => _MyAppState();
+
+  var parentId = 2;
+
+
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blue,
@@ -37,7 +44,15 @@ class _MyAppState extends State<MyApp> {
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (BuildContext context, int index) {
                     if (item[index]['parentId'] == null) {
-                      return HorizontalImage(item[index]['picture'].toString());
+                      return InkWell(
+                        onTap: (){
+
+                          setState(() {
+                            parentId=item[index]['id'];
+                          });
+
+                        },
+                          child: HorizontalImage(item[index]['picture'].toString()));
                     } else {
                       return Container(color: Colors.white // This is optional
                           );
@@ -59,9 +74,9 @@ class _MyAppState extends State<MyApp> {
                 return ListView.builder(
                   scrollDirection: Axis.vertical,
                   itemBuilder: (BuildContext context, int index) {
-                    if (item[index]['parentId'] == null) {
+                    if (item[index]['parentId'] == parentId) {
                       return Padding(
-                        padding: const EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(12),
                         child: Card(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20)),
@@ -69,11 +84,17 @@ class _MyAppState extends State<MyApp> {
                           child: Row(
                             children: [
                               Container(
-                                width: 160,
+                                width: 100,
                                 child: HorizontalImage(
                                     item[index]['picture'].toString()),
                               ),
-                              Text(item[index]['name'].toString()),
+                              Text(
+                                item[index]['name'].toString(),
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    color: Colors.black,
+                                    fontFamily: 'Open Sans'),
+                              ),
                             ],
                           ),
                         ),
